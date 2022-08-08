@@ -1,9 +1,11 @@
-<%- ("include partials/header") -%>
-    <p><%=firstParagraph%></p>
 
-    <% blogPosts.forEach( blog => { %>
-        <h2><%=blog.Title%></h2>
-        <p><%=blog.Post%></p>
-        <%console.log(blog.Title)%>
+<%- include("partials/header") %>
+<p><%=firstParagraph%></p>
+
+<% blogPosts.forEach( blog => { %>
+    <h2><%=blog.Title%></h2>
+    <p><%=blog.Post%></p>
+    <%console.log(blog.Title)%>
     <%})%>
-<%- ("include partials/footer") -%>
+    
+    <%- include("partials/footer") %>    
